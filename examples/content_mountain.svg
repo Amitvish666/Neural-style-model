@@ -1,0 +1,146 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mountain landscape content image example -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#b0e0e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f8ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="mountain1Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#696969;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2f4f4f;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="mountain2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#778899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#483d8b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="mountain3Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a9a9a9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#696969;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4682b4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#191970;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="forestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#228b22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="400" height="300" fill="url(#skyGradient)" />
+  
+  <!-- Clouds -->
+  <g opacity="0.7">
+    <ellipse cx="80" cy="40" rx="25" ry="12" fill="white" opacity="0.8"/>
+    <ellipse cx="95" cy="38" rx="20" ry="10" fill="white" opacity="0.9"/>
+    <ellipse cx="70" cy="45" rx="18" ry="8" fill="white" opacity="0.7"/>
+    
+    <ellipse cx="250" cy="30" rx="30" ry="15" fill="white" opacity="0.8"/>
+    <ellipse cx="270" cy="28" rx="25" ry="12" fill="white" opacity="0.9"/>
+    <ellipse cx="235" cy="35" rx="22" ry="10" fill="white" opacity="0.7"/>
+    
+    <ellipse cx="330" cy="50" rx="20" ry="10" fill="white" opacity="0.6"/>
+    <ellipse cx="340" cy="48" rx="15" ry="8" fill="white" opacity="0.8"/>
+  </g>
+  
+  <!-- Distant Mountains (Background) -->
+  <polygon points="0,120 80,80 160,100 240,70 320,90 400,85 400,300 0,300" 
+           fill="url(#mountain3Grad)" opacity="0.6"/>
+  
+  <!-- Middle Mountains -->
+  <polygon points="0,140 100,90 200,110 300,80 400,95 400,300 0,300" 
+           fill="url(#mountain2Grad)" opacity="0.8"/>
+  
+  <!-- Foreground Mountains -->
+  <polygon points="0,160 120,100 250,130 380,90 400,100 400,300 0,300" 
+           fill="url(#mountain1Grad)"/>
+  
+  <!-- Snow caps on peaks -->
+  <polygon points="115,100 125,90 135,100 130,105 120,105" fill="white" opacity="0.9"/>
+  <polygon points="245,130 255,115 265,130 260,135 250,135" fill="white" opacity="0.9"/>
+  <polygon points="375,90 385,80 395,90 390,95 380,95" fill="white" opacity="0.9"/>
+  
+  <!-- Lake in the valley -->
+  <ellipse cx="200" cy="220" rx="120" ry="30" fill="url(#lakeGrad)"/>
+  
+  <!-- Lake reflections -->
+  <g opacity="0.4">
+    <polygon points="190,210 210,200 220,210 200,220" fill="#696969"/>
+    <polygon points="160,215 180,205 190,215 170,225" fill="#778899"/>
+    <polygon points="220,215 240,205 250,215 230,225" fill="#a9a9a9"/>
+  </g>
+  
+  <!-- Lake surface ripples -->
+  <g opacity="0.3">
+    <ellipse cx="200" cy="210" rx="80" ry="5" fill="none" stroke="#87ceeb" stroke-width="1"/>
+    <ellipse cx="200" cy="220" rx="90" ry="6" fill="none" stroke="#87ceeb" stroke-width="1"/>
+    <ellipse cx="200" cy="235" rx="70" ry="4" fill="none" stroke="#87ceeb" stroke-width="1"/>
+  </g>
+  
+  <!-- Forest/Trees on mountainsides -->
+  <g opacity="0.8">
+    <!-- Left forest -->
+    <polygon points="20,180 40,160 60,170 80,155 100,165 120,160 140,170 160,165 180,175 180,300 20,300" 
+             fill="url(#forestGrad)"/>
+    
+    <!-- Right forest -->
+    <polygon points="280,175 300,160 320,165 340,155 360,160 380,165 400,170 400,300 280,300" 
+             fill="url(#forestGrad)"/>
+  </g>
+  
+  <!-- Individual trees for detail -->
+  <g opacity="0.9">
+    <polygon points="90,200 95,180 100,200" fill="#228b22"/>
+    <rect x="94" y="200" width="2" height="15" fill="#8b4513"/>
+    
+    <polygon points="140,190 145,170 150,190" fill="#228b22"/>
+    <rect x="144" y="190" width="2" height="12" fill="#8b4513"/>
+    
+    <polygon points="320,185 325,165 330,185" fill="#228b22"/>
+    <rect x="324" y="185" width="2" height="18" fill="#8b4513"/>
+    
+    <polygon points="350,180 355,160 360,180" fill="#228b22"/>
+    <rect x="354" y="180" width="2" height="20" fill="#8b4513"/>
+  </g>
+  
+  <!-- Foreground meadow -->
+  <ellipse cx="200" cy="280" rx="180" ry="20" fill="#32cd32" opacity="0.6"/>
+  
+  <!-- Sun -->
+  <circle cx="320" cy="60" r="20" fill="#ffd700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sun rays -->
+  <g opacity="0.4">
+    <line x1="320" y1="25" x2="320" y2="35" stroke="#ffd700" stroke-width="2"/>
+    <line x1="345" y1="35" x2="340" y2="40" stroke="#ffd700" stroke-width="2"/>
+    <line x1="355" y1="60" x2="345" y2="60" stroke="#ffd700" stroke-width="2"/>
+    <line x1="345" y1="85" x2="340" y2="80" stroke="#ffd700" stroke-width="2"/>
+    <line x1="320" y1="95" x2="320" y2="85" stroke="#ffd700" stroke-width="2"/>
+    <line x1="295" y1="85" x2="300" y2="80" stroke="#ffd700" stroke-width="2"/>
+    <line x1="285" y1="60" x2="295" y2="60" stroke="#ffd700" stroke-width="2"/>
+    <line x1="295" y1="35" x2="300" y2="40" stroke="#ffd700" stroke-width="2"/>
+  </g>
+  
+  <!-- Birds in the sky -->
+  <g opacity="0.6">
+    <path d="M150,70 Q155,65 160,70" stroke="#333" stroke-width="1" fill="none"/>
+    <path d="M155,72 Q160,67 165,72" stroke="#333" stroke-width="1" fill="none"/>
+    
+    <path d="M280,85 Q285,80 290,85" stroke="#333" stroke-width="1" fill="none"/>
+    <path d="M285,87 Q290,82 295,87" stroke="#333" stroke-width="1" fill="none"/>
+    <path d="M290,89 Q295,84 300,89" stroke="#333" stroke-width="1" fill="none"/>
+  </g>
+  
+  <text x="200" y="290" text-anchor="middle" font-family="serif" font-size="10" fill="#2f4f4f" opacity="0.7">
+    Example Content Image - Mountain Landscape
+  </text>
+</svg>

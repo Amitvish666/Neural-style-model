@@ -1,0 +1,95 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky with swirling patterns inspired by Starry Night -->
+  <defs>
+    <radialGradient id="skyGrad" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#022c22;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Sky -->
+  <rect width="400" height="300" fill="url(#skyGrad)" />
+  
+  <!-- Swirling Sky Patterns -->
+  <path d="M50 50 Q100 30 150 50 Q200 70 250 50 Q300 30 350 50" 
+        stroke="#fbbf24" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M30 80 Q80 60 130 80 Q180 100 230 80 Q280 60 330 80" 
+        stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M70 110 Q120 90 170 110 Q220 130 270 110 Q320 90 370 110" 
+        stroke="#d97706" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Stars -->
+  <circle cx="80" cy="40" r="3" fill="#fef3c7" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="30" r="2" fill="#fef3c7" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="220" cy="45" r="2.5" fill="#fef3c7" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="35" r="2" fill="#fef3c7" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Moon -->
+  <circle cx="320" cy="70" r="15" fill="#fef3c7" opacity="0.8"/>
+  <circle cx="325" cy="65" r="12" fill="#1e40af" opacity="0.3"/>
+  
+  <!-- Mountains -->
+  <polygon points="0,200 100,150 200,170 300,140 400,160 400,300 0,300" 
+           fill="url(#mountainGrad)" opacity="0.9"/>
+  <polygon points="50,180 150,130 250,150 350,120 400,140 400,300 0,300" 
+           fill="url(#mountainGrad)" opacity="0.7"/>
+  
+  <!-- Cypress Tree (iconic Starry Night element) -->
+  <path d="M30 300 Q35 250 25 200 Q40 150 35 100 Q30 80 35 60 Q25 40 30 20" 
+        stroke="#022c22" stroke-width="8" fill="none"/>
+  <ellipse cx="35" cy="200" rx="15" ry="40" fill="url(#treeGrad)" opacity="0.9"/>
+  <ellipse cx="30" cy="160" rx="12" ry="30" fill="url(#treeGrad)" opacity="0.8"/>
+  <ellipse cx="38" cy="120" rx="10" ry="25" fill="url(#treeGrad)" opacity="0.9"/>
+  <ellipse cx="32" cy="80" rx="8" ry="20" fill="url(#treeGrad)" opacity="0.8"/>
+  <ellipse cx="36" cy="45" rx="6" ry="15" fill="url(#treeGrad)" opacity="0.9"/>
+  
+  <!-- Village Lights -->
+  <rect x="180" y="220" width="15" height="20" fill="#451a03" opacity="0.8"/>
+  <polygon points="180,220 195,220 187.5,210" fill="#7c2d12" opacity="0.9"/>
+  <rect x="183" y="225" width="3" height="4" fill="#fbbf24" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.5;0.9" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="189" y="225" width="3" height="4" fill="#fbbf24" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="220" y="215" width="12" height="25" fill="#451a03" opacity="0.8"/>
+  <polygon points="220,215 232,215 226,208" fill="#7c2d12" opacity="0.9"/>
+  <rect x="222" y="220" width="2" height="3" fill="#fbbf24" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="227" y="220" width="2" height="3" fill="#fbbf24" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Additional atmospheric effects -->
+  <circle cx="100" cy="90" r="20" fill="#fbbf24" opacity="0.1">
+    <animate attributeName="r" values="20;25;20" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="280" cy="110" r="15" fill="#f59e0b" opacity="0.1">
+    <animate attributeName="r" values="15;20;15" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <text x="200" y="290" text-anchor="middle" font-family="serif" font-size="10" fill="#6b7280" opacity="0.6">
+    Example Content Image - Starry Night Landscape
+  </text>
+</svg>

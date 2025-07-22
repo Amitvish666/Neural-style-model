@@ -1,0 +1,133 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Van Gogh inspired swirling brushstroke patterns -->
+  <defs>
+    <radialGradient id="centerGrad">
+      <stop offset="0%" style="stop-color:#fcd34d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1d4ed8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Brush texture pattern -->
+    <pattern id="brushPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#f59e0b" opacity="0.3"/>
+      <path d="M0,2 L4,2" stroke="#d97706" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#blueGrad)" />
+  
+  <!-- Large swirling center pattern (like Starry Night swirls) -->
+  <g transform="translate(200,150)">
+    <!-- Central spiral -->
+    <path d="M0,0 Q-20,-20 -40,0 Q-40,40 0,40 Q40,40 40,0 Q40,-40 0,-40 Q-60,-40 -60,0 Q-60,60 0,60 Q60,60 60,0" 
+          stroke="#fcd34d" stroke-width="4" fill="none" opacity="0.8"/>
+    <path d="M0,0 Q-15,-15 -30,0 Q-30,30 0,30 Q30,30 30,0 Q30,-30 0,-30 Q-45,-30 -45,0 Q-45,45 0,45 Q45,45 45,0" 
+          stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M0,0 Q-10,-10 -20,0 Q-20,20 0,20 Q20,20 20,0 Q20,-20 0,-20 Q-30,-20 -30,0 Q-30,30 0,30 Q30,30 30,0" 
+          stroke="#d97706" stroke-width="2" fill="none"/>
+    
+    <!-- Radiating swirls -->
+    <g opacity="0.7">
+      <path d="M-80,-60 Q-90,-40 -70,-50 Q-50,-60 -60,-40" stroke="#fbbf24" stroke-width="3" fill="none"/>
+      <path d="M80,-60 Q90,-40 70,-50 Q50,-60 60,-40" stroke="#fbbf24" stroke-width="3" fill="none"/>
+      <path d="M-80,60 Q-90,40 -70,50 Q-50,60 -60,40" stroke="#fbbf24" stroke-width="3" fill="none"/>
+      <path d="M80,60 Q90,40 70,50 Q50,60 60,40" stroke="#fbbf24" stroke-width="3" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Flowing brushstrokes throughout -->
+  <g opacity="0.6">
+    <!-- Top area flowing strokes -->
+    <path d="M20,20 Q60,10 100,30 Q140,50 180,40 Q220,30 260,40 Q300,50 340,35 Q370,25 390,30" 
+          stroke="#60a5fa" stroke-width="6" fill="none"/>
+    <path d="M10,40 Q50,30 90,50 Q130,70 170,60 Q210,50 250,60 Q290,70 330,55 Q360,45 380,50" 
+          stroke="#3b82f6" stroke-width="4" fill="none"/>
+    <path d="M30,60 Q70,50 110,70 Q150,90 190,80 Q230,70 270,80 Q310,90 350,75 Q380,65 395,70" 
+          stroke="#1d4ed8" stroke-width="3" fill="none"/>
+    
+    <!-- Middle area swirls -->
+    <path d="M20,120 Q40,100 60,120 Q80,140 100,120 Q120,100 140,120 Q160,140 180,120 Q200,100 220,120" 
+          stroke="#fbbf24" stroke-width="5" fill="none"/>
+    <path d="M15,140 Q35,120 55,140 Q75,160 95,140 Q115,120 135,140 Q155,160 175,140 Q195,120 215,140" 
+          stroke="#f59e0b" stroke-width="4" fill="none"/>
+    
+    <path d="M240,100 Q260,80 280,100 Q300,120 320,100 Q340,80 360,100 Q380,120 390,110" 
+          stroke="#fbbf24" stroke-width="5" fill="none"/>
+    <path d="M235,120 Q255,100 275,120 Q295,140 315,120 Q335,100 355,120 Q375,140 385,130" 
+          stroke="#f59e0b" stroke-width="4" fill="none"/>
+    
+    <!-- Bottom area flowing patterns -->
+    <path d="M20,200 Q60,190 100,210 Q140,230 180,220 Q220,210 260,220 Q300,230 340,215 Q370,205 390,210" 
+          stroke="#34d399" stroke-width="4" fill="none"/>
+    <path d="M10,220 Q50,210 90,230 Q130,250 170,240 Q210,230 250,240 Q290,250 330,235 Q360,225 380,230" 
+          stroke="#10b981" stroke-width="3" fill="none"/>
+    <path d="M30,240 Q70,230 110,250 Q150,270 190,260 Q230,250 270,260 Q310,270 350,255 Q380,245 395,250" 
+          stroke="#059669" stroke-width="2" fill="none"/>
+    
+    <path d="M20,280 Q80,270 140,280 Q200,290 260,280 Q320,270 380,280" 
+          stroke="#4ade80" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Textured brush strokes overlay -->
+  <g opacity="0.4">
+    <!-- Vertical brush strokes -->
+    <rect x="50" y="0" width="8" height="300" fill="url(#brushPattern)"/>
+    <rect x="120" y="0" width="6" height="300" fill="url(#brushPattern)"/>
+    <rect x="180" y="0" width="10" height="300" fill="url(#brushPattern)"/>
+    <rect x="250" y="0" width="7" height="300" fill="url(#brushPattern)"/>
+    <rect x="310" y="0" width="9" height="300" fill="url(#brushPattern)"/>
+    
+    <!-- Diagonal brush strokes -->
+    <g transform="rotate(30 200 150)">
+      <rect x="200" y="0" width="4" height="300" fill="#f59e0b" opacity="0.2"/>
+      <rect x="210" y="0" width="4" height="300" fill="#d97706" opacity="0.2"/>
+    </g>
+    <g transform="rotate(-30 200 150)">
+      <rect x="190" y="0" width="4" height="300" fill="#fbbf24" opacity="0.2"/>
+      <rect x="200" y="0" width="4" height="300" fill="#f59e0b" opacity="0.2"/>
+    </g>
+  </g>
+  
+  <!-- Color patches (Van Gogh's color style) -->
+  <g opacity="0.5">
+    <circle cx="80" cy="80" r="15" fill="#fef3c7"/>
+    <circle cx="320" cy="100" r="20" fill="#ddd6fe"/>
+    <circle cx="150" cy="200" r="12" fill="#fca5a5"/>
+    <circle cx="280" cy="220" r="18" fill="#86efac"/>
+    <circle cx="60" cy="250" r="14" fill="#fed7aa"/>
+    <circle cx="340" cy="260" r="16" fill="#a5b4fc"/>
+  </g>
+  
+  <!-- Small swirl details -->
+  <g opacity="0.7">
+    <path d="M100,50 Q105,45 110,50 Q115,55 110,60 Q105,65 100,60 Q95,55 100,50" 
+          stroke="#fbbf24" stroke-width="2" fill="none"/>
+    <path d="M300,80 Q305,75 310,80 Q315,85 310,90 Q305,95 300,90 Q295,85 300,80" 
+          stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M150,120 Q155,115 160,120 Q165,125 160,130 Q155,135 150,130 Q145,125 150,120" 
+          stroke="#d97706" stroke-width="2" fill="none"/>
+    <path d="M250,180 Q255,175 260,180 Q265,185 260,190 Q255,195 250,190 Q245,185 250,180" 
+          stroke="#fbbf24" stroke-width="2" fill="none"/>
+    <path d="M80,220 Q85,215 90,220 Q95,225 90,230 Q85,235 80,230 Q75,225 80,220" 
+          stroke="#f59e0b" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Signature style color blobs -->
+  <g opacity="0.3">
+    <ellipse cx="120" cy="140" rx="25" ry="15" fill="#fbbf24" transform="rotate(20 120 140)"/>
+    <ellipse cx="280" cy="160" rx="20" ry="30" fill="#3b82f6" transform="rotate(-15 280 160)"/>
+    <ellipse cx="180" cy="250" rx="30" ry="20" fill="#10b981" transform="rotate(45 180 250)"/>
+    <ellipse cx="340" cy="200" rx="15" ry="25" fill="#f59e0b" transform="rotate(-30 340 200)"/>
+  </g>
+  
+  <text x="200" y="290" text-anchor="middle" font-family="serif" font-size="10" fill="#1f2937" opacity="0.6">
+    Example Style Image - Van Gogh Brushstrokes Pattern
+  </text>
+</svg>
